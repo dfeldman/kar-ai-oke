@@ -18,6 +18,8 @@ cd kar-ai-oke
 
 ## Usage
 
+First, generate an OpenAI API key in the OpenAI console. Set it in the environment like export OPENAI_API_KEY=<your unique code here>.
+
 To generate a silly presentation topic, simply run the script from the command line:
 
 python3 kar-ai-oke.py
@@ -28,6 +30,6 @@ The script will output a randomly generated presentation in the presentation/ fo
 
 Explore our examples to see the kind of fun and quirky presentation topics you can generate:
 
-- [Example: Walrus](examples/example_walrus)
-- [Example: Chocolate](examples/example_chocolate)
-- [Example: Gnome](examples/example_gnome)
+- [Example: Walrus](https://dfeldman.github.io/kar-ai-oke/examples/example_walrus/index.html)
+- [Example: Chocolate](https://dfeldman.github.io/kar-ai-oke/examples/example_chocolate/index.html)
+- [Example: Gnome](https://dfeldman.github.io/kar-ai-oke/examples/example_gnome/index.html)
