@@ -139,6 +139,14 @@ DO NOT INCLUDE ANY TEXT, NUMBERS, OR LETTERS.
 Thank you!
 """
 
+IMG_PROMPT_2="""
+draw a GRAPH on this topic: {description}. Make it similar to a PowerPoint graph. Do not include text, only graphics.
+"""
+
+IMG_PROMPT_3="""
+Create a photo of office workers in a meeting discussing the topic: {description}. Make it similar to a stock photo. Do not include text, only graphics.
+"""
+
 def clean_chatgpt_response(text):
     # Remove Markdown elements like ** (bold)
     text = re.sub(r"\*\*", "", text)
@@ -164,11 +172,12 @@ def clean_chatgpt_response(text):
 
     # Remove leftover colon or tags (often there)
     text = re.sub(r"^:", "", text, flags=re.MULTILINE)
-    text = re.sub(r"<b>: </b>", "", text, flags=re.MULTILINE)
-    text = re.sub(r"<b>:</b>", "", text, flags=re.MULTILINE)
+    text = re.sub(r"<[bi]>: </[bi]>", "", text, flags=re.MULTILINE)
+    text = re.sub(r"<[bi]>:</[bi]>", "", text, flags=re.MULTILINE)
     text = re.sub(r"^<b>:", "<b>", text, flags=re.MULTILINE)
-    text = re.sub(r"<b> </b>", "", text, flags=re.MULTILINE)
-    text = re.sub(r"<b></b>", "", text, flags=re.MULTILINE)
+    text = re.sub(r"^<i>:", "<i>", text, flags=re.MULTILINE)
+    text = re.sub(r"<[bi]> </[bi]>", "", text, flags=re.MULTILINE)
+    text = re.sub(r"<[bi]></[bi]>", "", text, flags=re.MULTILINE)
 
     return text.strip()
 
@@ -220,7 +229,13 @@ def generate_image_for_bullet_point(bullet_point):
     try:
         # Generate an image using DALL-E
         print("Generating image for:", bullet_point)
-        response = client.images.generate(prompt=IMG_PROMPT.format(description=strip_html(bullet_point)),
+        tmp_prompt=IMG_PROMPT
+        if n_image > 1:
+            if random.random() < 0.1:
+                tmp_prompt=IMG_PROMPT_2
+            elif random.random() < 0.2:
+                tmp_prompt=IMG_PROMPT_3
+        response = client.images.generate(prompt=tmp_prompt.format(description=strip_html(bullet_point)),
         n=1,
         size="1024x1024")
         
