@@ -46,6 +46,14 @@ The output always goes to presentation/. It will overwrite anything that's alrea
 
 It would be fun to make this a web app. 
 
+## Cost
+
+The text generation cost is trivial.
+
+As of this writing, OpenAI charges $0.04 cents per image, and each generated deck has around 20 images. So it costs about $0.80 to run this script. 
+
+Other image generation providers may be cheaper.
+
 ## Examples
 
 Explore our examples to see the kind of fun and quirky presentation topics you can generate:
