@@ -61,3 +61,5 @@ Explore our examples to see the kind of fun and quirky presentation topics you c
 - [Example: Walrus](https://dfeldman.github.io/kar-ai-oke/examples/example_walrus/index.html)
 - [Example: Chocolate](https://dfeldman.github.io/kar-ai-oke/examples/example_chocolate/index.html)
 - [Example: Gnome](https://dfeldman.github.io/kar-ai-oke/examples/example_gnome/index.html)
+- [Example: Pumpkin](https://dfeldman.github.io/kar-ai-oke/examples/example_pumpkin/index.html)
+
