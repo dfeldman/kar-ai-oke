@@ -1,0 +1,59 @@
+
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    font-family: 'Arial', sans-serif; /* Ensuring the whole page uses a sans-serif font */
+}
+
+.presentation {
+    display: flex;
+    flex-direction: column; /* Adjusted to column to ensure slides fill the screen */
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100vw; /* Ensures full viewport width */
+    color: white;
+    overflow: hidden;
+}
+
+.slide {
+    width: 100%; /* Ensures slide fills the width */
+    height: 100vh; /* Ensures slide fills the viewport height */
+    display: none; /* Start with slides not displayed */
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    position: relative; /* Needed for absolute positioning of child elements */
+}
+
+.slide img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures image covers slide without losing aspect ratio */
+    z-index: -1; /* Image goes behind text */
+}
+
+.slide p {
+    z-index: 2; /* Ensure text appears above the background image */
+    font-size: 4em; /* Larger text size */
+    color: white;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background for readability */
+    border-radius: 10px; /* Rounded corners for text background */
+}
+
+.active {
+    display: flex; /* Active slide is displayed */
+    animation: fadeIn 1s; /* Fade-in animation for transitions */
+}
+
+@keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
