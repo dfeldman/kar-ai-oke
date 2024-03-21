@@ -296,14 +296,38 @@ def generate_topic():
         "The Untold Story of", "The Rise and Fall of", "How to Cook", "The Art of",
         "Surviving", "The Economics of", "The Philosophy of", "The Science Behind",
         "Dancing with", "Singing with", "The Global Impact of", "The Future of",
-        "Befriending", "Avoiding"
+        "Befriending", "Avoiding", "The Misunderstood World of", "The Legendary Tale of",
+        "Decoding the Secrets of", "The Adventures of", "The Misadventures of",
+        "Reimagining", "The Cultural Significance of", "The Mythical Origins of",
+        "The Psychological Effects of", "Mastering the Craft of", "Breaking the Myth of",
+        "The Conspiracy Theories Surrounding", "The Love-Hate Relationship with",
+        "The Unexpected Virtues of", "The Hidden World of", "Navigating the Complexities of",
+        "The Fine Line Between", "The Eternal Quest for", "The Surprising Benefits of",
+        "Debunking the Myths of", "The Zen of", "The Lost Art of", "The Forbidden Knowledge of",
+        "Harnessing the Power of", "The Epic Journey Through", "The Ultimate Guide to",
+        "Unraveling the Mystery of", "Celebrating the Wonders of", "The Dark Side of",
+        "Finding Solace in", "The Thrill of", "The Humble Beginnings of", "The Enduring Legacy of"
     ]
     
     parts_b = [
         "Walruses", "Bananas", "Aliens", "Garden Gnomes", "Dust Bunnies", "Robotic Vacuum Cleaners",
         "Left Socks", "Tea Leaves", "Quantum Mechanics", "Pirate Ghosts", "Invisible Cats",
         "Chocolate Fountains", "Time Travelers", "Underwater Basket Weaving", "Lawn Gnomes",
-        "Moon Cheese", "Sock Puppets", "The Internet", "Reality TV Stars", "Haunted Houses"
+        "Moon Cheese", "Sock Puppets", "The Internet", "Reality TV Stars", "Haunted Houses",
+        "Flying Carpets", "Spaghetti Trees", "Talking Toilets", "Zombie Plants", "Dancing Robots",
+        "Cheese Whiz Sculptures", "Glow-in-the-Dark Fish", "Exploding Sprinkles", "Ninja Penguins",
+        "Magical Unicorns", "Space Dolphins", "Parallel Universes", "Singing Sand Dunes",
+        "Mystical Pizza", "Giant Rubber Ducks", "Inflatable Hammers", "Antigravity Pancakes",
+        "Rainbow Bagels", "Unicorn Frappuccinos", "Emoji Spells", "Virtual Reality Vacations",
+        "Self-Tying Shoelaces", "Invisible Ink Printers", "Time-Traveling Postcards", "Telepathic Typewriters",
+        "Hoverboard Polo Leagues", "Intergalactic Sushi Chefs", "Potion Brewing Competitions", "Cloud Sculpting",
+        "Wizarding Olympics", "Fairy Tale Hackathons", "Dragon Taming Workshops", "Time Capsules to Mars",
+        "Underground Cities", "Mystery Flavor Contests", "4D Movie Theaters", "Zero-Gravity Dance Parties",
+        "Astral Projection Retreats", "Cyborg Petting Zoos", "Polka-Dotted Zebras", "Reversible Rainstorms",
+        "Portable Black Holes", "Leap Frog Competitions", "Interstellar Coffee Tasting",
+        "Telekinetic Cooking Shows", "Eco-Friendly Fireworks", "Bioluminescent Tattoos", "Mind-Melding Board Games",
+        "Gravity-Defying Hairstyles", "Whispering Libraries", "Chocolate-Covered Solar Systems",
+        "Pumpkin-Spiced Latte Clouds", "Broomstick Traffic Reports"
     ]
     
     parts_c = [
@@ -311,7 +335,16 @@ def generate_topic():
         "at the End of the World", "in France", "in Ancient Egypt", "in the Digital Age",
         "without Leaving Your House", "on Mars", "in the Deep Sea", "in the Future",
         "in a Parallel Universe", "in Your Dreams", "in the Middle Ages", "in a Dystopian Future",
-        "in the Wild West", "in High School", "on a Desert Island", "at the North Pole"
+        "in the Wild West", "in High School", "on a Desert Island", "at the North Pole",
+        "inside a Volcano", "under the Arctic Ice", "at a Haunted House", "within a Secret Society",
+        "on a Pirate Ship", "inside a Video Game", "at the Edge of the Universe", "in a Fairy Tale",
+        "inside a Painting", "on a Flying City", "underneath Paris", "in a Giant's Pocket",
+        "on a Lost Continent", "in a Crystal Cave", "at the Bottom of a Well", "in an Alternate Dimension",
+        "on the Moon's Dark Side", "inside a Sandstorm", "at a Wizarding School", "in a Robot Uprising",
+        "on a Space Elevator", "in a Quantum Loop", "at a Time Travelers' Convention", "in a Superhero Hideout",
+        "on an Alien Planet", "in a Magical Forest", "at the World's End Pub", "in an Underwater Dome",
+        "on a Hover Train", "in a Dream Catcher", "at the Center of the Earth", "in a Parallel Timeline",
+        "on a Cloud Castle", "in a Bubble Universe", "at a Galactic Crossroads", "in an Invisible City"
     ]
     
     # Randomly select one element from each list
