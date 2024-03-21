@@ -24,7 +24,27 @@ To generate a silly presentation topic, simply run the script from the command l
 
 python3 kar-ai-oke.py
 
+You can either specify a topic, or press enter to get a randomly generated topic.
+
 The script will output a randomly generated presentation in the presentation/ folder. Open presentation/index.html in your web browser.
+
+Slides advance automatically every 20 seconds, or you can use arrow keys to go back and forth. 
+
+## Bugs/Improvements
+
+It would be nice to have a different template for the title vs. the other slides, or other random templates. 
+
+It might be fun to have some slides that just have the image alone to make the player scramble.
+
+Some randomly generated charts might be fun. 
+
+If the bullet point is one censored by OpenAI (like "Dark Web"), image generation may fail. It will appear as a white background.
+
+The number of slides may vary a bit depending on ChatGPT's mood.
+
+The output always goes to presentation/. It will overwrite anything that's already there. 
+
+It would be fun to make this a web app. 
 
 ## Examples
 
